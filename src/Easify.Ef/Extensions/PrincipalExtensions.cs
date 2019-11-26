@@ -4,7 +4,6 @@ namespace Easify.Ef.Extensions
 {
     public static class PrincipalExtensions
     {
-        // TODO: Need to be sourced from somewhere else
         public const string AnonymousUser = "Anonymous";
 
         public static string GetUserName(this IPrincipal principal)

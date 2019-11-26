@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Security.Principal;
 using Easify.Ef.Extensions;
-using ICG.Core.Http;
+using Easify.Http;
 
 namespace Easify.Ef.Testing.Extensions
 {

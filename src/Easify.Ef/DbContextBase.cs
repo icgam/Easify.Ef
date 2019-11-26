@@ -4,7 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Easify.Ef.ComponentModel;
 using Easify.Ef.Extensions;
-using ICG.Core.Http;
+using Easify.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
@@ -13,12 +13,6 @@ namespace Easify.Ef
     public abstract class DbContextBase : DbContext
     {
         private readonly IOperationContext _operationContext;
-
-        [Obsolete("It will be removed in the next version. Use the constructor with IOperationContext instead.")]
-        protected DbContextBase(DbContextOptions options, IRequestContext requestContext) : base(options)
-        {
-            _operationContext = requestContext ?? throw new ArgumentNullException(nameof(requestContext));
-        }
 
         protected DbContextBase(DbContextOptions options, IOperationContext operationContext) : base(options)
         {
@@ -31,7 +25,7 @@ namespace Easify.Ef
 
             ChangeTracker.AutoDetectChangesEnabled = false;
 
-            var result = base.SaveChanges(acceptAllChangesOnSuccess);
+            var result = base.SaveChanges(acceptAllChangesOnSuccess: acceptAllChangesOnSuccess);
 
             ChangeTracker.AutoDetectChangesEnabled = true;
 
@@ -59,7 +53,7 @@ namespace Easify.Ef
             var entries = ChangeTracker.Entries()
                 .Where(e => e.State == EntityState.Added || e.State == EntityState.Modified);
 
-            var userName = _operationContext.User?.GetUserName() ?? "Anonymous";
+            var userName = _operationContext.User?.GetUserName();
 
             foreach (var entry in entries)
             {
@@ -76,7 +70,7 @@ namespace Easify.Ef
             }
         }
 
-        private void SetEntryPropertyValue(EntityEntry entry, string propertyName, object value)
+        private static void SetEntryPropertyValue(EntityEntry entry, string propertyName, object value)
         {
             var property = entry.Properties.FirstOrDefault(p => p.Metadata.Name.Equals(propertyName, StringComparison.CurrentCultureIgnoreCase));
             if (property != null)

@@ -1,6 +1,7 @@
 ﻿using System;
 using Easify.Ef.Testing.Extensions;
-using ICG.Core.Http;
+using Easify.Http;
+using EfCore.UnitOfWork;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.DependencyInjection;
@@ -10,16 +11,16 @@ namespace Easify.Ef.Testing
 {
     public static class DbContextExtensions
     {
-        public static IServiceCollection AddInMemoryDbContext<TDbContext>(this IServiceCollection services)
+        public static IServiceCollection AddInMemoryUnitOfWork<TDbContext>(this IServiceCollection services)
             where TDbContext : DbContext
         {
             if (services == null) throw new ArgumentNullException(nameof(services));
 
             var name = $"{typeof(TDbContext).Name}_{Guid.NewGuid()}";
-            return services.AddInMemoryDbContext<TDbContext>(name);
-        }        
-        
-        public static IServiceCollection AddInMemoryDbContext<TDbContext>(this IServiceCollection services, string contextName)
+            return services.AddInMemoryUnitOfWork<TDbContext>(name);
+        }
+
+        private static IServiceCollection AddInMemoryUnitOfWork<TDbContext>(this IServiceCollection services, string contextName)
             where TDbContext : DbContext
         {
             if (services == null) throw new ArgumentNullException(nameof(services));

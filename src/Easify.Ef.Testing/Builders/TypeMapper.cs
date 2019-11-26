@@ -1,6 +1,6 @@
 ﻿using System;
 using AutoMapper;
-using ICG.Core.Extensions;
+using Easify.Extensions;
 
 namespace Easify.Ef.Testing.Builders
 {

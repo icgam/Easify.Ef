@@ -10,12 +10,12 @@
     <RepositoryUrl>https://github.com/icgam/ICG.Core.Ef</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="ICG.Core.Extensions" Version="2.0.93" />
-    <PackageReference Include="ICG.Core.Http" Version="2.0.93" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.2" />
+    <PackageReference Include="Easify.Extensions" Version="1.0.10" />
+    <PackageReference Include="Easify.Http" Version="1.0.10" />
+    <PackageReference Include="EfCore.UnitOfWork" Version="1.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.0.2" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.2" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.UnitOfWork" Version="2.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.3" />
   </ItemGroup>
 </Project>

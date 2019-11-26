@@ -3,6 +3,7 @@ using AutoMapper;
 
 namespace Easify.Ef.Testing.Builders
 {
+    
     public static class MapperBuilder
     {
         public static IMapper Build(Action<IMapperConfigurationExpression> configurator)
