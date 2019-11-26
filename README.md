@@ -1,4 +1,6 @@
-# Unit of Work support for Easify
+# Ef support for Easify
+
+[![Build status](https://ci.appveyor.com/api/projects/status/i4gixt92p7daqgyl?svg=true)](https://ci.appveyor.com/project/moattarwork/easify-ef) ![](https://img.shields.io/nuget/v/Easify.Ef.svg?style=flat-square)
 
 The library contains couple of useful classes and extensions to register DbContext in ServiceCollection.
 
