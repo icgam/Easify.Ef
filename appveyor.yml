@@ -28,13 +28,6 @@ deploy:
       secure: udBSWYCH7maFnr2SuJ3fs0ovxfFmmFpqumWSqvTDpHjLYbAW5Hdzf5DOQPf1YWO7
     on:
       branch: master
-notifications:
-  - provider: Webhook
-    url: https://outlook.office.com/webhook/84db8641-d8a9-4b9d-b818-f1e4d4087ae5@31d4ce72-dfb2-4be8-b876-3278f8641754/IncomingWebhook/53369591d10d4af98801d3f6184b58fa/44a9a258-9ff2-4690-b260-aa79ba2b368b
-    method: POST
-    on_build_success: true
-    on_build_failure: true
-    on_build_status_changed: false
 only_commits:
   files:
     - src/
