@@ -6,8 +6,8 @@
     <Company>ICG</Company>
     <PackageLicenseUrl>
     </PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/icgam/ICG.Core.Ef</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/icgam/ICG.Core.Ef</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/icgam/Easify.Ef</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/icgam/Easify.Ef</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="6.2.2" />

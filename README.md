@@ -8,6 +8,20 @@ The library is dependent to core version of entity framework and external librar
 
 The library provides helper methods for both API projects and test (unit and integration) projects.
 
+Install the packages from NuGet repository
+
+```cmd
+Install-Package Easify.Ef
+Install-Package Easify.Ef.Testing
+```
+
+or
+
+```cmd
+dotnet add package Easify.Ef
+dotnet add package Easify.Ef.Testing
+```
+
 ### API/Console projects
 
 To use the library in any projects you can register context using the following snippet:
