@@ -15,8 +15,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // 
 
-
-﻿using System;
+using System;
 using AutoMapper;
 using Easify.Extensions;
 

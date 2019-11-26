@@ -15,8 +15,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // 
 
-
-﻿using Easify.Ef.Testing.Extensions;
+using Easify.Ef.Testing.Extensions;
 using Easify.Ef.Testing.UnitTests.Models;
 using FluentAssertions;
 using Xunit;
