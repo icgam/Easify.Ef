@@ -1,4 +1,7 @@
-# Unit of Work support for Easify
+# Ef support for Easify
+
+[![Build status](https://ci.appveyor.com/api/projects/status/i4gixt92p7daqgyl?svg=true)](https://ci.appveyor.com/project/moattarwork/easify-ef) ![](https://img.shields.io/nuget/v/Easify.Ef.svg?style=flat-square)
+
 
 The library contains couple of useful classes and extensions to register DbContext in ServiceCollection.
 
@@ -7,6 +10,20 @@ The library is dependent to core version of entity framework and external librar
 ## How to use
 
 The library provides helper methods for both API projects and test (unit and integration) projects.
+
+Install the packages from NuGet repository
+
+```cmd
+Install-Package Easify.Ef
+Install-Package Easify.Ef.Testing
+```
+
+or
+
+```cmd
+dotnet add package Easify.Ef
+dotnet add package Easify.Ef.Testing
+```
 
 ### API/Console projects
 

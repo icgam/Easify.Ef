@@ -6,8 +6,8 @@
     <Company>ICG</Company>
     <Description>
     </Description>
-    <PackageProjectUrl>https://github.com/icgam/ICG.Core.Ef</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/icgam/ICG.Core.Ef</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/icgam/Easify.Ef</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/icgam/Easify.Ef</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Easify.Extensions" Version="1.0.10" />
