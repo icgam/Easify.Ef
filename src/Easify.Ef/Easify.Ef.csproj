@@ -4,10 +4,10 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Mohammad Moattar</Authors>
     <Company>ICG</Company>
-    <Description>
-    </Description>
+    <Description>Easify support for entity framework core and UnitOfWork</Description>
     <PackageProjectUrl>https://github.com/icgam/Easify.Ef</PackageProjectUrl>
     <RepositoryUrl>https://github.com/icgam/Easify.Ef</RepositoryUrl>
+    <Version>1.0.0</Version>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Easify.Extensions" Version="1.0.10" />
