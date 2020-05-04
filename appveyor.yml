@@ -25,6 +25,7 @@ build_script:
 test_script:
 - ps: >-
     dotnet test ./src/Easify.Ef.UnitTests/Easify.Ef.UnitTests.csproj
+    
     dotnet test ./src/Easify.Ef.Testing.UnitTests/Easify.Ef.Testing.UnitTests.csproj
 artifacts:
 - path: '**/*.nupkg'
