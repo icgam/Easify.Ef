@@ -52,6 +52,7 @@ namespace Easify.Ef.Testing.UnitTests
             var uow = sp.GetRequiredService<IUnitOfWork<SampleDbContext>>();
             uow.GetRepository<SampleEntity>()
                 .Insert(new SampleEntity {Id = 1, Name = "1"}, new SampleEntity { Id = 2, Name = "2"});
+            
             uow.SaveChanges();
 
             var actual = uow.GetRepository<SampleEntity>().GetList();
