@@ -19,7 +19,7 @@ branches:
     - master
 only_commits:
   files:
-    - src/**
+    - src/
 build_script:
 - ps: dotnet build src/Easify.Ef.sln
 test_script:
