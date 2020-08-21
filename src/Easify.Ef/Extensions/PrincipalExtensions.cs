@@ -1,20 +1,22 @@
 // This software is part of the Easify.Ef Library
 // Copyright (C) 2018 Intermediate Capital Group
-// 
+//
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
-// 
+//
 // This program is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU Affero General Public License for more details.
-// 
+//
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
-// 
+//
 
+using System.Linq;
+using System.Security.Claims;
 using System.Security.Principal;
 
 namespace Easify.Ef.Extensions
@@ -26,10 +28,14 @@ namespace Easify.Ef.Extensions
         public static string GetUserName(this IPrincipal principal)
         {
             var identity = principal?.Identity;
-            if (identity == null)
+            if (identity == null || identity.IsAuthenticated == false)
                 return AnonymousUser;
 
-            return identity.IsAuthenticated == false ? AnonymousUser : identity.Name;
+            if (!string.IsNullOrWhiteSpace(identity.Name)) return identity.Name;
+            if (!(identity is ClaimsIdentity claimsIdentity)) return AnonymousUser;
+
+            var claim = claimsIdentity.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name);
+            return claim?.Value ?? AnonymousUser;
         }
     }
 }
