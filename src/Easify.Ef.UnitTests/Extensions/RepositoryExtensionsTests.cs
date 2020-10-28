@@ -19,6 +19,7 @@ using System;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using Easify.Ef.Extensions;
 using Easify.Ef.UnitTests.Models;
 using Easify.Extensions.Specifications;
 using EfCore.UnitOfWork;
@@ -41,7 +42,7 @@ namespace Easify.Ef.UnitTests.Extensions
             var expression = spec.ToExpression();
 
             // Act
-            Easify.Ef.Extensions.RepositoryExtensions.GetList(repository, spec, q => q);
+            repository.GetList(spec, q => q);
 
             // Assert
             repository.Received(1).GetList(Arg.Is((Expression<Func<SampleEntity, bool>> m)  => m.ToString() == expression.ToString()),
@@ -60,7 +61,7 @@ namespace Easify.Ef.UnitTests.Extensions
             var expression = spec.ToExpression();
 
             // Act
-            await Easify.Ef.Extensions.RepositoryExtensions.GetListAsync(repository, spec, q => q);
+            await repository.GetListAsync(spec, q => q);
 
             // Assert
             await repository.Received(1).GetListAsync(Arg.Is((Expression<Func<SampleEntity, bool>> m)  => m.ToString() == expression.ToString()),
@@ -79,7 +80,7 @@ namespace Easify.Ef.UnitTests.Extensions
             var expression = spec.ToExpression();
 
             // Act
-            Easify.Ef.Extensions.RepositoryExtensions.GetFirstOrDefault(repository, spec, q => q);
+            repository.GetFirstOrDefault(spec, q => q);
 
             // Assert
             repository.Received(1).GetFirstOrDefault(Arg.Is((Expression<Func<SampleEntity, bool>> m)  => m.ToString() == expression.ToString()),
@@ -98,7 +99,7 @@ namespace Easify.Ef.UnitTests.Extensions
             var expression = spec.ToExpression();
 
             // Act
-            await Easify.Ef.Extensions.RepositoryExtensions.GetFirstOrDefaultAsync(repository, spec, q => q);
+            await repository.GetFirstOrDefaultAsync(spec, q => q);
 
             // Assert
             await repository.Received(1).GetFirstOrDefaultAsync(Arg.Is((Expression<Func<SampleEntity, bool>> m)  => m.ToString() == expression.ToString()),
