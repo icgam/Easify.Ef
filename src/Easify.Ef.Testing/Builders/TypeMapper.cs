@@ -23,12 +23,11 @@ namespace Easify.Ef.Testing.Builders
 {
     public class TypeMapper : ITypeMapper
     {
-        private readonly Action<IMapperConfigurationExpression> _configurator;
         private readonly IMapper _mapper;
             
         public TypeMapper(Action<IMapperConfigurationExpression> configurator)
         {
-            _configurator = configurator;
+            if (configurator == null) throw new ArgumentNullException(nameof(configurator));
             _mapper = MapperBuilder.Build(configurator);
         }
 
