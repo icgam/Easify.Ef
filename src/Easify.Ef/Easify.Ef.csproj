@@ -11,8 +11,8 @@
     <LangVersion>8</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Easify.Extensions" Version="3.0.1" />
-    <PackageReference Include="Easify.Http" Version="3.0.1" />
+    <PackageReference Include="Easify.Extensions" Version="3.0.4" />
+    <PackageReference Include="Easify.Http" Version="3.0.4" />
     <PackageReference Include="EfCore.UnitOfWork" Version="3.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.9">

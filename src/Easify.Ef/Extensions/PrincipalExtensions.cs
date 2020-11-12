@@ -31,8 +31,11 @@ namespace Easify.Ef.Extensions
             if (identity == null || identity.IsAuthenticated == false)
                 return AnonymousUser;
 
-            if (!string.IsNullOrWhiteSpace(identity.Name)) return identity.Name;
-            if (!(identity is ClaimsIdentity claimsIdentity)) return AnonymousUser;
+            if (!string.IsNullOrWhiteSpace(identity.Name)) 
+                return identity.Name;
+            
+            if (!(identity is ClaimsIdentity claimsIdentity)) 
+                return AnonymousUser;
 
             var claim = claimsIdentity.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name);
             return claim?.Value ?? AnonymousUser;
