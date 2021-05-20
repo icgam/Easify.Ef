@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Mohammad Moattar</Authors>
     <Company>ICG</Company>
@@ -8,18 +8,18 @@
     <PackageProjectUrl>https://github.com/icgam/Easify.Ef</PackageProjectUrl>
     <RepositoryUrl>https://github.com/icgam/Easify.Ef</RepositoryUrl>
     <Version>1.0.0</Version>
-    <LangVersion>8</LangVersion>
+    <LangVersion>latestmajor</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Easify.Extensions" Version="3.0.4" />
-    <PackageReference Include="Easify.Http" Version="3.0.4" />
-    <PackageReference Include="EfCore.UnitOfWork" Version="3.0.1" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.9" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.9">
+    <PackageReference Include="Easify.Extensions" Version="5.0.1" />
+    <PackageReference Include="Easify.Http" Version="5.0.1" />
+    <PackageReference Include="EfCore.UnitOfWork" Version="5.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.6">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.9" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.6" />
   </ItemGroup>
 </Project>

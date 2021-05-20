@@ -32,7 +32,7 @@ namespace Easify.Ef.UnitTests
         public void Should_SaveChanges_GivenAuditableEntity_SetAuditableFieldsCorrectly()
         {
             // Arrange
-            var entity = new SampleEntity() {Id = 1, Name = "1"};
+            var entity = new SampleEntity {Id = 1, Name = "1"};
             var options = new DbContextOptionsBuilder<SampleDbContext>()
                 .UseInMemoryDatabase($"SampleDb{Guid.NewGuid()}")
                 .Options;
@@ -49,8 +49,6 @@ namespace Easify.Ef.UnitTests
             actual.Should().NotBeNull().And.Match<SampleEntity>(m =>
                 m.Id == 1 && m.LastModifiedDate.Date == DateTime.Today &&
                 m.LastModifiedBy == PrincipalExtensions.AnonymousUser);
-
-
         }
     }
 }
