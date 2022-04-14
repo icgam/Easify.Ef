@@ -41,10 +41,10 @@ jobs:
           echo "Version: ${{ steps.gitversion.outputs.semVer }}"
       - name: Build
         run: |
-          dotnet build src --configuration Release --no-restore -p:version=5.7.0
+          dotnet build src --configuration Release --no-restore -p:version=${{ steps.gitversion.outputs.semVer }}
       - name: Unit & integration test
         run: |
-          dotnet test src --configuration Release --no-restore -p:version=5.7.0
+          dotnet test src --configuration Release --no-restore -p:version=${{ steps.gitversion.outputs.semVer }}
       - name: Collect Artifacts
         uses: actions/upload-artifact@v2
         with:
