@@ -31,24 +31,26 @@ jobs:
           dotnet-version: "6.0.x"
       - name: Install dependencies
         run: dotnet restore src
-      - name: Use GitVersion
-        id: gitversion
-        uses: gittools/actions/gitversion/execute@v0.9.7
-      - name: Display the version
-        run: |
-          echo "Version: ${{ steps.gitversion.outputs.semVer }}"
+
+#      - name: Use GitVersion
+#        id: gitversion
+#        uses: gittools/actions/gitversion/execute@v0.9.7
+#
+#      - name: Display the version
+#        run: |
+#          echo "Version: ${{ steps.gitversion.outputs.semVer }}"
       - name: Build
         run: |
-          dotnet build src --configuration Release --no-restore -p:version=${{ steps.gitversion.outputs.semVer }}
+          dotnet build src --configuration Release --no-restore -p:version=5.7.0
       - name: Unit & integration test
         run: |
-          dotnet test src --configuration Release --no-restore -p:version=${{ steps.gitversion.outputs.semVer }}
-      - name: Collect Artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: nuget-packages
-          path: "**/*.nupkg"
-      - name: Configure github as Package Repository
-        run: dotnet nuget add source https://nuget.pkg.github.com/icgam/index.json -n "github"
-      - name: Publish the package to GitHub Packages
-        run: dotnet nuget push "**/*.nupkg" -s "github" -k ${{ secrets.GITHUB_TOKEN }} --skip-duplicate
+          dotnet test src --configuration Release --no-restore -p:version=5.7.0
+#      - name: Collect Artifacts
+#        uses: actions/upload-artifact@v2
+#        with:
+#          name: nuget-packages
+#          path: "**/*.nupkg"
+#      - name: Configure github as Package Repository
+#        run: dotnet nuget add source https://nuget.pkg.github.com/icgam/index.json -n "github"
+#      - name: Publish the package to GitHub Packages
+#        run: dotnet nuget push "**/*.nupkg" -s "github" -k ${{ secrets.GITHUB_TOKEN }} --skip-duplicate
