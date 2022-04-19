@@ -15,10 +15,6 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-using System.Linq;
-using System.Security.Claims;
-using System.Security.Principal;
-
 namespace Easify.Ef.Extensions;
 
 public static class PrincipalExtensions

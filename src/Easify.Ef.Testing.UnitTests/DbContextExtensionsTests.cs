@@ -15,12 +15,6 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-using Easify.Ef.Testing.UnitTests.Models;
-using EfCore.UnitOfWork;
-using FluentAssertions;
-using Microsoft.Extensions.DependencyInjection;
-using Xunit;
-
 namespace Easify.Ef.Testing.UnitTests;
 
 public class DbContextExtensionsTests

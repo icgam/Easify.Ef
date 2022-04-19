@@ -15,16 +15,6 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-using System;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
-using Easify.Ef.ComponentModel;
-using Easify.Ef.Extensions;
-using Easify.Http;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
-
 namespace Easify.Ef;
 
 public abstract class DbContextBase : DbContext

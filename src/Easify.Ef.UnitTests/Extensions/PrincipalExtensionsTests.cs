@@ -15,45 +15,37 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-using System.Collections.Generic;
-using System.Security.Claims;
-using System.Security.Principal;
-using Easify.Ef.Extensions;
-using FluentAssertions;
-using Xunit;
+namespace Easify.Ef.UnitTests.Extensions;
 
-namespace Easify.Ef.UnitTests.Extensions
+public class PrincipalExtensionsTests
 {
-    public class PrincipalExtensionsTests
+    [Theory]
+    [InlineData(true, "", PrincipalExtensions.AnonymousUser)]
+    [InlineData(true, "username", "username")]
+    [InlineData(false, "", null)]
+    public void Should_GetUserName_ReturnRightUserFromPrincipal_WhenThereIsOneOtherwiseAnonymous(bool validIdentity, string username, string expected)
     {
-        [Theory]
-        [InlineData(true, "", PrincipalExtensions.AnonymousUser)]
-        [InlineData(true, "username", "username")]
-        [InlineData(false, "", null)]
-        public void Should_GetUserName_ReturnRightUserFromPrincipal_WhenThereIsOneOtherwiseAnonymous(bool validIdentity, string username, string expected)
-        {
-            // Arrange
-            var principal = validIdentity ? new GenericPrincipal(new GenericIdentity(username), new string[] {}) : null;
+        // Arrange
+        var principal = validIdentity ? new GenericPrincipal(new GenericIdentity(username), new string[] {}) : null;
 
-            // Act
-            var actual = principal?.GetUserName();
+        // Act
+        var actual = principal?.GetUserName();
 
-            // Assert
-            actual.Should().Be(expected);
-        }
+        // Assert
+        actual.Should().Be(expected);
+    }
 
-        [Fact]
-        public void Should_GetUserName_ReturnTheCorrectUserFromClaimsPrincipal()
-        {
-            //Arrange
-            var identity = new ClaimsIdentity(new[] {new Claim(ClaimTypes.Name, "n/a")}, "Federated", ClaimTypes.NameIdentifier, ClaimTypes.Role);
-            var claimsPrincipal = new ClaimsPrincipal(identity);
+    [Fact]
+    public void Should_GetUserName_ReturnTheCorrectUserFromClaimsPrincipal()
+    {
+        //Arrange
+        var identity = new ClaimsIdentity(new[] {new Claim(ClaimTypes.Name, "n/a")}, "Federated", ClaimTypes.NameIdentifier, ClaimTypes.Role);
+        var claimsPrincipal = new ClaimsPrincipal(identity);
 
-            //Act
-            var actual = claimsPrincipal.GetUserName();
+        //Act
+        var actual = claimsPrincipal.GetUserName();
 
-            //Assert
-            actual.Should().Be("n/a");
-        }
+        //Assert
+        actual.Should().Be("n/a");
     }
 }
