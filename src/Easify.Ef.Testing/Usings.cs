@@ -1,9 +1,4 @@
-﻿global using System;
-global using System.Collections.Generic;
-global using System.Diagnostics.CodeAnalysis;
-global using System.Security.Principal;
-
-global using Easify.Ef.Extensions;
+﻿global using Easify.Ef.Extensions;
 global using Easify.Ef.Testing.Extensions;
 global using Easify.Http;
 
