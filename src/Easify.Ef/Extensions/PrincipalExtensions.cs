@@ -15,30 +15,25 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-using System.Linq;
-using System.Security.Claims;
-using System.Security.Principal;
+namespace Easify.Ef.Extensions;
 
-namespace Easify.Ef.Extensions
+public static class PrincipalExtensions
 {
-    public static class PrincipalExtensions
+    public const string AnonymousUser = "Anonymous";
+
+    public static string GetUserName(this IPrincipal principal)
     {
-        public const string AnonymousUser = "Anonymous";
+        var identity = principal?.Identity;
+        if (identity == null || identity.IsAuthenticated == false)
+            return AnonymousUser;
 
-        public static string GetUserName(this IPrincipal principal)
-        {
-            var identity = principal?.Identity;
-            if (identity == null || identity.IsAuthenticated == false)
-                return AnonymousUser;
+        if (!string.IsNullOrWhiteSpace(identity.Name))
+            return identity.Name;
 
-            if (!string.IsNullOrWhiteSpace(identity.Name)) 
-                return identity.Name;
-            
-            if (!(identity is ClaimsIdentity claimsIdentity)) 
-                return AnonymousUser;
+        if (!(identity is ClaimsIdentity claimsIdentity))
+            return AnonymousUser;
 
-            var claim = claimsIdentity.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name);
-            return claim?.Value ?? AnonymousUser;
-        }
+        var claim = claimsIdentity.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name);
+        return claim?.Value ?? AnonymousUser;
     }
 }

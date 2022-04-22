@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Mohammad Moattar</Authors>
     <Company>ICG</Company>
@@ -8,7 +8,7 @@
     <PackageProjectUrl>https://github.com/icgam/Easify.Ef</PackageProjectUrl>
     <RepositoryUrl>https://github.com/icgam/Easify.Ef</RepositoryUrl>
     <Version>1.0.0</Version>
-    <LangVersion>latestmajor</LangVersion>
+    <LangVersion>10</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
