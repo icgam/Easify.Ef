@@ -1,9 +1,9 @@
-﻿global using Easify.Ef.ComponentModel;
-global using Easify.Ef.UnitTests.Models;
-global using Easify.Ef.Extensions;
-global using Easify.Ef.Testing.Extensions;
-global using Easify.Extensions.Specifications;
-global using Easify.Http;
+﻿global using LittleBlocks.Ef.ComponentModel;
+global using LittleBlocks.Ef.UnitTests.Models;
+global using LittleBlocks.Ef.Extensions;
+global using LittleBlocks.Ef.Testing.Extensions;
+global using LittleBlocks.Extensions.Specifications;
+global using LittleBlocks.Http;
 
 global using Microsoft.EntityFrameworkCore;
 

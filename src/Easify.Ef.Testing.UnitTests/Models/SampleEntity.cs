@@ -1,5 +1,5 @@
-// This software is part of the Easify.Ef Library
-// Copyright (C) 2018 Intermediate Capital Group
+// This software is part of the LittleBlocks.Ef Library
+// Copyright (C) 2022 Little Blocks
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as published by
@@ -15,7 +15,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-namespace Easify.Ef.Testing.UnitTests.Models;
+namespace LittleBlocks.Ef.Testing.UnitTests.Models;
 
 public sealed class SampleEntity
 {

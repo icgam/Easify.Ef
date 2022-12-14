@@ -15,7 +15,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Easify.Ef.Testing\Easify.Ef.Testing.csproj" />
-    <ProjectReference Include="..\Easify.Ef\Easify.Ef.csproj" />
+    <ProjectReference Include="..\LittleBlocks.Ef.Testing\LittleBlocks.Ef.Testing.csproj" />
+    <ProjectReference Include="..\LittleBlocks.Ef\LittleBlocks.Ef.csproj" />
   </ItemGroup>
 </Project>

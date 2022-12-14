@@ -4,15 +4,15 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Mohammad Moattar</Authors>
     <Company>ICG</Company>
-    <Description>Easify support for entity framework core and UnitOfWork</Description>
-    <PackageProjectUrl>https://github.com/icgam/Easify.Ef</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/icgam/Easify.Ef</RepositoryUrl>
+    <Description>LittleBlocks support for entity framework core and UnitOfWork</Description>
+    <PackageProjectUrl>https://github.com/LittleBlocks/LittleBlocks.Ef</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/LittleBlocks/LittleBlocks.Ef</RepositoryUrl>
     <Version>1.0.0</Version>
     <LangVersion>10</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Easify.Extensions" Version="5.0.1" />
-    <PackageReference Include="Easify.Http" Version="5.0.1" />
+    <PackageReference Include="LittleBlocks.Extensions" Version="5.0.1" />
+    <PackageReference Include="LittleBlocks.Http" Version="5.0.1" />
     <PackageReference Include="EfCore.UnitOfWork" Version="5.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.6">

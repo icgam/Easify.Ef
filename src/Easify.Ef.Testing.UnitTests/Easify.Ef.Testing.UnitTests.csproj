@@ -17,6 +17,6 @@
         <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\Easify.Ef.Testing\Easify.Ef.Testing.csproj" />
+      <ProjectReference Include="..\LittleBlocks.Ef.Testing\LittleBlocks.Ef.Testing.csproj" />
     </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
-# Ef support for Easify
+# Ef support for LittleBlocks
 
-![Release](https://github.com/icgam/Easify.Ef/workflows/Release%20build%20on%20master/main/badge.svg) ![CI](https://github.com/icgam/Easify.Ef/workflows/CI%20on%20Branches%20and%20PRs/badge.svg) ![](https://img.shields.io/nuget/v/Easify.Ef.svg?style=flat-square)
+![Release](https://github.com/LittleBlocks/LittleBlocks.Ef/workflows/Release%20build%20on%20master/main/badge.svg) ![CI](https://github.com/LittleBlocks/LittleBlocks.Ef/workflows/CI%20on%20Branches%20and%20PRs/badge.svg) ![](https://img.shields.io/nuget/v/LittleBlocks.Ef.svg?style=flat-square)
 
 
 The library contains couple of useful classes and extensions to register DbContext in ServiceCollection.
@@ -14,15 +14,15 @@ The library provides helper methods for both API projects and test (unit and int
 Install the packages from NuGet repository
 
 ```cmd
-Install-Package Easify.Ef
-Install-Package Easify.Ef.Testing
+Install-Package LittleBlocks.Ef
+Install-Package LittleBlocks.Ef.Testing
 ```
 
 or
 
 ```cmd
-dotnet add package Easify.Ef
-dotnet add package Easify.Ef.Testing
+dotnet add package LittleBlocks.Ef
+dotnet add package LittleBlocks.Ef.Testing
 ```
 
 ### API/Console projects

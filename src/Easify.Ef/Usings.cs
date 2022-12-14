@@ -1,7 +1,7 @@
-﻿global using Easify.Extensions.Specifications;
-global using Easify.Ef.ComponentModel;
-global using Easify.Ef.Extensions;
-global using Easify.Http;
+﻿global using LittleBlocks.Extensions.Specifications;
+global using LittleBlocks.Ef.ComponentModel;
+global using LittleBlocks.Ef.Extensions;
+global using LittleBlocks.Http;
 
 global using Microsoft.EntityFrameworkCore;
 global using Microsoft.EntityFrameworkCore.ChangeTracking;

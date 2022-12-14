@@ -1,6 +1,6 @@
-﻿global using Easify.Ef.Extensions;
-global using Easify.Ef.Testing.Extensions;
-global using Easify.Http;
+﻿global using LittleBlocks.Ef.Extensions;
+global using LittleBlocks.Ef.Testing.Extensions;
+global using LittleBlocks.Http;
 
 global using Microsoft.EntityFrameworkCore;
 global using Microsoft.EntityFrameworkCore.Diagnostics;
