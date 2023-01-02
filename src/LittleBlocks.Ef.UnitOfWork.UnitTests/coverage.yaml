@@ -1,0 +1,636 @@
+EfCore.UnitOfWork.dll:
+  C:\_git\moattarwork\UnitOfWork\src\EfCore.UnitOfWork\Repository.cs:
+    EfCore.UnitOfWork.Repository`1:
+      System.Collections.Generic.IEnumerable`1<TEntity> EfCore.UnitOfWork.Repository`1::GetList(System.Linq.Expressions.Expression`1<System.Func`2<TEntity,System.Boolean>>,System.Func`2<System.Linq.IQueryable`1<TEntity>,System.Linq.IQueryable`1<TEntity>>):
+        Lines:
+          43: 0
+        Branches: []
+      System.Collections.Generic.IEnumerable`1<TProjectedEntity> EfCore.UnitOfWork.Repository`1::GetProjectedList(System.Linq.Expressions.Expression`1<System.Func`2<TEntity,System.Boolean>>,System.Func`2<TEntity,TProjectedEntity>,System.Func`2<System.Linq.IQueryable`1<TEntity>,System.Linq.IQueryable`1<TEntity>>):
+        Lines:
+          48: 0
+        Branches: []
+      System.Collections.Generic.IEnumerable`1<TEntity> EfCore.UnitOfWork.Repository`1::GetList(System.Func`2<System.Linq.IQueryable`1<TEntity>,System.Linq.IQueryable`1<TEntity>>):
+        Lines:
+          51: 0
+        Branches: []
+      System.Collections.Generic.IEnumerable`1<TProjectedEntity> EfCore.UnitOfWork.Repository`1::GetProjectedList(System.Func`2<TEntity,TProjectedEntity>,System.Func`2<System.Linq.IQueryable`1<TEntity>,System.Linq.IQueryable`1<TEntity>>):
+        Lines:
+          55: 0
+        Branches: []
+      TEntity EfCore.UnitOfWork.Repository`1::GetFirstOrDefault(System.Linq.Expressions.Expression`1<System.Func`2<TEntity,System.Boolean>>,System.Func`2<System.Linq.IQueryable`1<TEntity>,System.Linq.IQueryable`1<TEntity>>):
+        Lines:
+          63: 0
+        Branches: []
+      System.Linq.IQueryable`1<TEntity> EfCore.UnitOfWork.Repository`1::GetListInternal(System.Linq.Expressions.Expression`1<System.Func`2<TEntity,System.Boolean>>,System.Func`2<System.Linq.IQueryable`1<TEntity>,System.Linq.IQueryable`1<TEntity>>):
+        Lines:
+          67: 0
+          68: 0
+          70: 0
+          71: 0
+          72: 0
+          74: 0
+          75: 0
+        Branches:
+        - Line: 68
+          Offset: 7
+          EndOffset: 9
+          Path: 0
+          Ordinal: 0
+          Hits: 0
+        - Line: 68
+          Offset: 7
+          EndOffset: 20
+          Path: 1
+          Ordinal: 1
+          Hits: 0
+        - Line: 71
+          Offset: 39
+          EndOffset: 41
+          Path: 0
+          Ordinal: 2
+          Hits: 0
+        - Line: 71
+          Offset: 39
+          EndOffset: 49
+          Path: 1
+          Ordinal: 3
+          Hits: 0
+      System.Linq.IQueryable`1<TProjectedEntity> EfCore.UnitOfWork.Repository`1::GetListProjectedByInternal(System.Linq.Expressions.Expression`1<System.Func`2<TEntity,System.Boolean>>,System.Func`2<TEntity,TProjectedEntity>,System.Func`2<System.Linq.IQueryable`1<TEntity>,System.Linq.IQueryable`1<TEntity>>):
+        Lines:
+          79: 0
+          80: 0
+          82: 0
+          83: 0
+          84: 0
+        Branches:
+        - Line: 80
+          Offset: 20
+          EndOffset: 22
+          Path: 0
+          Ordinal: 0
+          Hits: 0
+        - Line: 80
+          Offset: 20
+          EndOffset: 33
+          Path: 1
+          Ordinal: 1
+          Hits: 0
+      System.Linq.IQueryable`1<TEntity> EfCore.UnitOfWork.Repository`1::FromSql(System.String,System.Object[]):
+        Lines:
+          86: 0
+        Branches: []
+      TEntity EfCore.UnitOfWork.Repository`1::Find(System.Object[]):
+        Lines:
+          88: 0
+        Branches: []
+      System.Threading.Tasks.Task`1<TEntity> EfCore.UnitOfWork.Repository`1::FindAsync(System.Object[]):
+        Lines:
+          90: 0
+        Branches: []
+      System.Threading.Tasks.Task`1<TEntity> EfCore.UnitOfWork.Repository`1::FindAsync(System.Object[],System.Threading.CancellationToken):
+        Lines:
+          92: 0
+        Branches: []
+      System.Int32 EfCore.UnitOfWork.Repository`1::Count(System.Linq.Expressions.Expression`1<System.Func`2<TEntity,System.Boolean>>):
+        Lines:
+          94: 0
+        Branches:
+        - Line: 94
+          Offset: 1
+          EndOffset: 3
+          Path: 0
+          Ordinal: 0
+          Hits: 0
+        - Line: 94
+          Offset: 1
+          EndOffset: 17
+          Path: 1
+          Ordinal: 1
+          Hits: 0
+      System.Void EfCore.UnitOfWork.Repository`1::Insert(TEntity):
+        Lines:
+          96: 0
+        Branches: []
+      System.Void EfCore.UnitOfWork.Repository`1::Insert(TEntity[]):
+        Lines:
+          98: 0
+        Branches: []
+      System.Void EfCore.UnitOfWork.Repository`1::Insert(System.Collections.Generic.IEnumerable`1<TEntity>):
+        Lines:
+          100: 0
+        Branches: []
+      System.Threading.Tasks.Task EfCore.UnitOfWork.Repository`1::InsertAsync(TEntity,System.Threading.CancellationToken):
+        Lines:
+          102: 0
+        Branches: []
+      System.Threading.Tasks.Task EfCore.UnitOfWork.Repository`1::InsertAsync(TEntity[]):
+        Lines:
+          104: 0
+        Branches: []
+      System.Threading.Tasks.Task EfCore.UnitOfWork.Repository`1::InsertAsync(System.Collections.Generic.IEnumerable`1<TEntity>,System.Threading.CancellationToken):
+        Lines:
+          106: 0
+        Branches: []
+      System.Void EfCore.UnitOfWork.Repository`1::Update(TEntity):
+        Lines:
+          108: 0
+        Branches: []
+      System.Void EfCore.UnitOfWork.Repository`1::Update(TEntity[]):
+        Lines:
+          110: 0
+        Branches: []
+      System.Void EfCore.UnitOfWork.Repository`1::Update(System.Collections.Generic.IEnumerable`1<TEntity>):
+        Lines:
+          112: 0
+        Branches: []
+      System.Void EfCore.UnitOfWork.Repository`1::Delete(TEntity):
+        Lines:
+          114: 0
+        Branches: []
+      System.Void EfCore.UnitOfWork.Repository`1::Delete(System.Object):
+        Lines:
+          117: 0
+          118: 0
+          119: 0
+          120: 0
+          121: 0
+          122: 0
+          123: 0
+        Branches:
+        - Line: 119
+          Offset: 34
+          EndOffset: 36
+          Path: 0
+          Ordinal: 0
+          Hits: 0
+        - Line: 119
+          Offset: 34
+          EndOffset: 46
+          Path: 1
+          Ordinal: 1
+          Hits: 0
+      System.Void EfCore.UnitOfWork.Repository`1::Delete(TEntity[]):
+        Lines:
+          125: 0
+        Branches: []
+      System.Void EfCore.UnitOfWork.Repository`1::Delete(System.Collections.Generic.IEnumerable`1<TEntity>):
+        Lines:
+          127: 0
+        Branches: []
+      System.Void EfCore.UnitOfWork.Repository`1::.ctor(Microsoft.EntityFrameworkCore.DbContext):
+        Lines:
+          18: 0
+          19: 0
+          20: 0
+          21: 0
+          22: 0
+        Branches:
+        - Line: 20
+          Offset: 11
+          EndOffset: 13
+          Path: 0
+          Ordinal: 0
+          Hits: 0
+        - Line: 20
+          Offset: 11
+          EndOffset: 25
+          Path: 1
+          Ordinal: 1
+          Hits: 0
+    EfCore.UnitOfWork.Repository`1/<GetListAsync>d__3:
+      System.Void EfCore.UnitOfWork.Repository`1/<GetListAsync>d__3::MoveNext():
+        Lines:
+          26: 0
+        Branches: []
+    EfCore.UnitOfWork.Repository`1/<GetProjectedListAsync>d__4`1:
+      System.Void EfCore.UnitOfWork.Repository`1/<GetProjectedListAsync>d__4`1::MoveNext():
+        Lines:
+          31: 0
+        Branches: []
+    EfCore.UnitOfWork.Repository`1/<GetListAsync>d__5:
+      System.Void EfCore.UnitOfWork.Repository`1/<GetListAsync>d__5::MoveNext():
+        Lines:
+          34: 0
+        Branches: []
+    EfCore.UnitOfWork.Repository`1/<GetProjectedListAsync>d__6`1:
+      System.Void EfCore.UnitOfWork.Repository`1/<GetProjectedListAsync>d__6`1::MoveNext():
+        Lines:
+          39: 0
+        Branches: []
+    EfCore.UnitOfWork.Repository`1/<GetFirstOrDefaultAsync>d__11:
+      System.Void EfCore.UnitOfWork.Repository`1/<GetFirstOrDefaultAsync>d__11::MoveNext():
+        Lines:
+          59: 0
+        Branches: []
+  C:\_git\moattarwork\UnitOfWork\src\EfCore.UnitOfWork\UnitOfWork.cs:
+    EfCore.UnitOfWork.UnitOfWork`1:
+      TContext EfCore.UnitOfWork.UnitOfWork`1::get_DbContext():
+        Lines:
+          21: 0
+        Branches: []
+      EfCore.UnitOfWork.IRepository`1<TEntity> EfCore.UnitOfWork.UnitOfWork`1::GetRepository(System.Boolean):
+        Lines:
+          24: 0
+          25: 0
+          26: 0
+          29: 0
+          30: 0
+          31: 0
+          32: 0
+          33: 0
+          34: 0
+          37: 0
+          38: 0
+          39: 0
+          41: 0
+          42: 0
+        Branches:
+        - Line: 25
+          Offset: 12
+          EndOffset: 14
+          Path: 0
+          Ordinal: 0
+          Hits: 0
+        - Line: 25
+          Offset: 12
+          EndOffset: 25
+          Path: 1
+          Ordinal: 1
+          Hits: 0
+        - Line: 29
+          Offset: 28
+          EndOffset: 30
+          Path: 0
+          Ordinal: 2
+          Hits: 0
+        - Line: 32
+          Offset: 56
+          EndOffset: 58
+          Path: 0
+          Ordinal: 4
+          Hits: 0
+        - Line: 32
+          Offset: 56
+          EndOffset: 63
+          Path: 1
+          Ordinal: 5
+          Hits: 0
+        - Line: 29
+          Offset: 28
+          EndOffset: 64
+          Path: 1
+          Ordinal: 3
+          Hits: 0
+        - Line: 38
+          Offset: 94
+          EndOffset: 96
+          Path: 0
+          Ordinal: 6
+          Hits: 0
+        - Line: 38
+          Offset: 94
+          EndOffset: 125
+          Path: 1
+          Ordinal: 7
+          Hits: 0
+      System.Int32 EfCore.UnitOfWork.UnitOfWork`1::ExecuteSqlCommand(System.String,System.Object[]):
+        Lines:
+          44: 0
+        Branches: []
+      System.Linq.IQueryable`1<TEntity> EfCore.UnitOfWork.UnitOfWork`1::FromSql(System.String,System.Object[]):
+        Lines:
+          46: 0
+        Branches: []
+      System.Int32 EfCore.UnitOfWork.UnitOfWork`1::SaveChanges(System.Boolean):
+        Lines:
+          49: 0
+          50: 0
+          51: 0
+          53: 0
+          54: 0
+        Branches:
+        - Line: 50
+          Offset: 4
+          EndOffset: 6
+          Path: 0
+          Ordinal: 0
+          Hits: 0
+        - Line: 50
+          Offset: 4
+          EndOffset: 23
+          Path: 1
+          Ordinal: 1
+          Hits: 0
+      System.Void EfCore.UnitOfWork.UnitOfWork`1::Dispose():
+        Lines:
+          81: 0
+          82: 0
+          84: 0
+          85: 0
+        Branches: []
+      System.Void EfCore.UnitOfWork.UnitOfWork`1::Dispose(System.Boolean):
+        Lines:
+          88: 0
+          89: 0
+          90: 0
+          91: 0
+          92: 0
+          93: 0
+          94: 0
+          95: 0
+          96: 0
+          98: 0
+          99: 0
+        Branches:
+        - Line: 89
+          Offset: 12
+          EndOffset: 14
+          Path: 0
+          Ordinal: 0
+          Hits: 0
+        - Line: 91
+          Offset: 18
+          EndOffset: 20
+          Path: 0
+          Ordinal: 2
+          Hits: 0
+        - Line: 93
+          Offset: 28
+          EndOffset: 30
+          Path: 0
+          Ordinal: 4
+          Hits: 0
+        - Line: 93
+          Offset: 28
+          EndOffset: 33
+          Path: 1
+          Ordinal: 5
+          Hits: 0
+        - Line: 91
+          Offset: 18
+          EndOffset: 57
+          Path: 1
+          Ordinal: 3
+          Hits: 0
+        - Line: 89
+          Offset: 12
+          EndOffset: 58
+          Path: 1
+          Ordinal: 1
+          Hits: 0
+      System.Void EfCore.UnitOfWork.UnitOfWork`1::TrackGraph(System.Object,System.Action`1<Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntryGraphNode>):
+        Lines:
+          101: 0
+        Branches: []
+      System.Void EfCore.UnitOfWork.UnitOfWork`1::.ctor(TContext):
+        Lines:
+          19: 0
+        Branches:
+        - Line: 19
+          Offset: 15
+          EndOffset: 17
+          Path: 0
+          Ordinal: 0
+          Hits: 0
+        - Line: 19
+          Offset: 15
+          EndOffset: 29
+          Path: 1
+          Ordinal: 1
+          Hits: 0
+    EfCore.UnitOfWork.UnitOfWork`1/<SaveChangesAsync>d__10:
+      System.Void EfCore.UnitOfWork.UnitOfWork`1/<SaveChangesAsync>d__10::MoveNext():
+        Lines:
+          57: 0
+          58: 0
+          59: 0
+          61: 0
+          62: 0
+        Branches:
+        - Line: 58
+          Offset: 23
+          EndOffset: 25
+          Path: 0
+          Ordinal: 0
+          Hits: 0
+        - Line: 58
+          Offset: 23
+          EndOffset: 47
+          Path: 1
+          Ordinal: 1
+          Hits: 0
+    EfCore.UnitOfWork.UnitOfWork`1/<>c__DisplayClass11_0/<<SaveChangesAsync>b__0>d:
+      System.Void EfCore.UnitOfWork.UnitOfWork`1/<>c__DisplayClass11_0/<<SaveChangesAsync>b__0>d::MoveNext():
+        Lines:
+          68: 0
+        Branches: []
+    EfCore.UnitOfWork.UnitOfWork`1/<SaveChangesAsync>d__11:
+      System.Void EfCore.UnitOfWork.UnitOfWork`1/<SaveChangesAsync>d__11::MoveNext():
+        Lines:
+          65: 0
+          66: 0
+          67: 0
+          69: 0
+          71: 0
+          72: 0
+          74: 0
+          76: 0
+          78: 0
+        Branches: []
+  C:\_git\moattarwork\UnitOfWork\src\EfCore.UnitOfWork\UnitOfWorkServiceCollectionExtensions.cs:
+    EfCore.UnitOfWork.UnitOfWorkServiceCollectionExtensions:
+      Microsoft.Extensions.DependencyInjection.IServiceCollection EfCore.UnitOfWork.UnitOfWorkServiceCollectionExtensions::AddUnitOfWork(Microsoft.Extensions.DependencyInjection.IServiceCollection):
+        Lines:
+          9: 0
+          10: 0
+          11: 0
+          12: 0
+          14: 0
+          15: 0
+          20: 0
+          21: 0
+          22: 0
+          24: 0
+          25: 0
+          31: 0
+          32: 0
+          33: 0
+          34: 0
+          36: 0
+          37: 0
+          44: 0
+          45: 0
+          46: 0
+          47: 0
+          48: 0
+          50: 0
+          51: 0
+        Branches: []
+      Microsoft.Extensions.DependencyInjection.IServiceCollection EfCore.UnitOfWork.UnitOfWorkServiceCollectionExtensions::AddCustomRepository(Microsoft.Extensions.DependencyInjection.IServiceCollection):
+        Lines:
+          56: 0
+          57: 0
+          59: 0
+          60: 0
+        Branches: []
+  C:\_git\moattarwork\UnitOfWork\src\EfCore.UnitOfWork\Extensions\PagingOptions.cs:
+    EfCore.UnitOfWork.Extensions.PagingOptions:
+      System.Int32 EfCore.UnitOfWork.Extensions.PagingOptions::get_PageIndex():
+        Lines:
+          22: 0
+        Branches: []
+      System.Int32 EfCore.UnitOfWork.Extensions.PagingOptions::get_PageSize():
+        Lines:
+          23: 0
+        Branches: []
+      System.Void EfCore.UnitOfWork.Extensions.PagingOptions::.ctor(System.Int32,System.Int32):
+        Lines:
+          9: 0
+          10: 0
+          11: 0
+          12: 0
+          14: 0
+          15: 0
+          16: 0
+        Branches:
+        - Line: 11
+          Offset: 17
+          EndOffset: 19
+          Path: 0
+          Ordinal: 0
+          Hits: 0
+        - Line: 11
+          Offset: 17
+          EndOffset: 30
+          Path: 1
+          Ordinal: 1
+          Hits: 0
+        - Line: 12
+          Offset: 39
+          EndOffset: 41
+          Path: 0
+          Ordinal: 2
+          Hits: 0
+        - Line: 12
+          Offset: 39
+          EndOffset: 52
+          Path: 1
+          Ordinal: 3
+          Hits: 0
+      System.Void EfCore.UnitOfWork.Extensions.PagingOptions::.ctor():
+        Lines:
+          18: 0
+          19: 0
+          20: 0
+        Branches: []
+  C:\_git\moattarwork\UnitOfWork\src\EfCore.UnitOfWork\Extensions\QueryableExtensions.cs:
+    EfCore.UnitOfWork.Extensions.QueryableExtensions:
+      System.Linq.IQueryable`1<T> EfCore.UnitOfWork.Extensions.QueryableExtensions::PagedBy(System.Linq.IQueryable`1<T>,EfCore.UnitOfWork.Extensions.PagingOptions):
+        Lines:
+          9: 0
+          10: 0
+          11: 0
+          13: 0
+          14: 0
+        Branches:
+        - Line: 10
+          Offset: 7
+          EndOffset: 9
+          Path: 0
+          Ordinal: 0
+          Hits: 0
+        - Line: 10
+          Offset: 7
+          EndOffset: 20
+          Path: 1
+          Ordinal: 1
+          Hits: 0
+        - Line: 11
+          Offset: 26
+          EndOffset: 28
+          Path: 0
+          Ordinal: 2
+          Hits: 0
+        - Line: 11
+          Offset: 26
+          EndOffset: 39
+          Path: 1
+          Ordinal: 3
+          Hits: 0
+      System.Linq.IQueryable`1<T> EfCore.UnitOfWork.Extensions.QueryableExtensions::PagedBy(System.Linq.IQueryable`1<T>,System.Int32,System.Int32):
+        Lines:
+          17: 0
+          18: 0
+          19: 0
+          20: 0
+          22: 0
+          23: 0
+        Branches:
+        - Line: 18
+          Offset: 7
+          EndOffset: 9
+          Path: 0
+          Ordinal: 0
+          Hits: 0
+        - Line: 18
+          Offset: 7
+          EndOffset: 20
+          Path: 1
+          Ordinal: 1
+          Hits: 0
+        - Line: 19
+          Offset: 26
+          EndOffset: 28
+          Path: 0
+          Ordinal: 2
+          Hits: 0
+        - Line: 19
+          Offset: 26
+          EndOffset: 39
+          Path: 1
+          Ordinal: 3
+          Hits: 0
+        - Line: 20
+          Offset: 48
+          EndOffset: 50
+          Path: 0
+          Ordinal: 4
+          Hits: 0
+        - Line: 20
+          Offset: 48
+          EndOffset: 61
+          Path: 1
+          Ordinal: 5
+          Hits: 0
+      System.Linq.IQueryable`1<TResult> EfCore.UnitOfWork.Extensions.QueryableExtensions::ProjectTo(System.Linq.IQueryable`1<T>,System.Func`2<T,TResult>):
+        Lines:
+          26: 0
+          27: 0
+          28: 0
+          30: 0
+          31: 0
+        Branches:
+        - Line: 27
+          Offset: 20
+          EndOffset: 22
+          Path: 0
+          Ordinal: 0
+          Hits: 0
+        - Line: 27
+          Offset: 20
+          EndOffset: 33
+          Path: 1
+          Ordinal: 1
+          Hits: 0
+        - Line: 28
+          Offset: 44
+          EndOffset: 46
+          Path: 0
+          Ordinal: 2
+          Hits: 0
+        - Line: 28
+          Offset: 44
+          EndOffset: 57
+          Path: 1
+          Ordinal: 3
+          Hits: 0

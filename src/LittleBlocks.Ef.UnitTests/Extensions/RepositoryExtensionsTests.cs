@@ -15,6 +15,8 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
+using LittleBlocks.Ef.UnitOfWork;
+
 namespace LittleBlocks.Ef.UnitTests.Extensions;
 
 public class RepositoryExtensionsTests
