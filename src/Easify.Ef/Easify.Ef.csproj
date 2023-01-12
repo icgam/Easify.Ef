@@ -11,15 +11,15 @@
     <LangVersion>10</LangVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Easify.Extensions" Version="5.0.1" />
-    <PackageReference Include="Easify.Http" Version="5.0.1" />
+    <PackageReference Include="Easify.Extensions" Version="6.0.0" />
+    <PackageReference Include="Easify.Http" Version="6.0.0" />
     <PackageReference Include="EfCore.UnitOfWork" Version="5.0.1" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.6" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.6">
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.12">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.6" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.12" />
   </ItemGroup>
 </Project>
