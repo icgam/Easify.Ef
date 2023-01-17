@@ -15,6 +15,8 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
+using Easify.Ef.UnitOfWork;
+
 namespace Easify.Ef.Testing.Extensions;
 
 public static class EntityListExtensions

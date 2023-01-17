@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Easify.Ef", "Easify.Ef\Easify.Ef.csproj", "{172C7EEB-9663-4B4C-94A9-295F4961C285}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Easify.Ef.UnitTests", "Easify.Ef.UnitTests\Easify.Ef.UnitTests.csproj", "{EE8ACCA4-BFEB-4A17-80ED-86C7CF3BC781}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Easify.Ef.UnitTests", "Easify.Ef.UnitTests\Easify.Ef.UnitTests.csproj", "{EE8ACCA4-BFEB-4A17-80ED-86C7CF3BC781}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Easify.Ef.Testing", "Easify.Ef.Testing\Easify.Ef.Testing.csproj", "{8258D7DC-CE00-46F6-B7E2-C54FA9259AE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Easify.Ef.Testing", "Easify.Ef.Testing\Easify.Ef.Testing.csproj", "{8258D7DC-CE00-46F6-B7E2-C54FA9259AE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Easify.Ef.Testing.UnitTests", "Easify.Ef.Testing.UnitTests\Easify.Ef.Testing.UnitTests.csproj", "{D4B8183D-0B90-470C-BE92-89EC3B99C246}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Easify.Ef.Testing.UnitTests", "Easify.Ef.Testing.UnitTests\Easify.Ef.Testing.UnitTests.csproj", "{D4B8183D-0B90-470C-BE92-89EC3B99C246}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
