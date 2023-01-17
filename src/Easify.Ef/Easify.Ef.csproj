@@ -13,8 +13,10 @@
   <ItemGroup>
     <PackageReference Include="Easify.Extensions" Version="6.0.0" />
     <PackageReference Include="Easify.Http" Version="6.0.0" />
-    <PackageReference Include="EfCore.UnitOfWork" Version="5.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.12" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.AutoHistory" Version="6.0.0" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.12" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.12">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

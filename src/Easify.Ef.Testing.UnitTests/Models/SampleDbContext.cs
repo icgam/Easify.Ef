@@ -15,6 +15,8 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
+using Easify.Http;
+
 namespace Easify.Ef.Testing.UnitTests.Models;
 
 public class SampleDbContext : DbContextBase

@@ -7,7 +7,7 @@ global using Easify.Http;
 
 global using Microsoft.EntityFrameworkCore;
 
-global using EfCore.UnitOfWork;
+global using Easify.Ef.UnitOfWork;
 global using FluentAssertions;
 global using NSubstitute;
 global using Xunit;
